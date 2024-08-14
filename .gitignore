@@ -1,0 +1,29 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# Dependency directories
+.venv/
+
+# IDE specific files
+.idea/
+*.suo
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+*.pth
+*.bin
+
+*.csv
+*.pkl

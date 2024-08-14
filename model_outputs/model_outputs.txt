@@ -1,0 +1,62 @@
+INFO:root:Training Random Forest model...
+INFO:root:Training Logistic Regression model...
+INFO:root:Training SVM model...
+INFO:root:Evaluating Random Forest model...
+INFO:root:Random Forest Accuracy: 0.7189375
+INFO:root:Random Forest
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.71      0.73      0.72    159494
+           4       0.73      0.70      0.72    160506
+
+    accuracy                           0.72    320000
+   macro avg       0.72      0.72      0.72    320000
+weighted avg       0.72      0.72      0.72    320000
+
+INFO:root:Evaluating Logistic Regression model...
+INFO:root:Logistic Regression Accuracy: 0.728834375
+INFO:root:Logistic Regression
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.73      0.73      0.73    159494
+           4       0.73      0.73      0.73    160506
+
+    accuracy                           0.73    320000
+   macro avg       0.73      0.73      0.73    320000
+weighted avg       0.73      0.73      0.73    320000
+
+INFO:root:Evaluating SVM model...
+INFO:root:Logistic Regression Accuracy: 0.728834375
+INFO:root:Logistic Regression
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.74      0.73      0.74      4045
+           1       0.73      0.74      0.73      3956
+
+    accuracy                           0.73      8001
+   macro avg       0.73      0.73      0.73      8001
+weighted avg       0.73      0.73      0.73      8001
+
+----------------------------------------------------------------------
+
+Fine tuned DistilBert:
+
+Finished training epoch 3/4 - Training Loss: 0.1872 - Training Accuracy: 0.9509
+Validation Loss after epoch 3: 0.5016 -  Validation Accuracy: 0.8420
+Early stopping triggered after 3 epochs
+Final model saved to \youtube_sentiment_analysis\models\distilbert_model_final.pth
+Accuracy: 84.20%
+Enter sentences to classify (type 'exit' to quit):
+Sentence: I really like this one
+Predicted class: Positive
+Sentence: This video made me mad
+Predicted class: Negative
+Sentence: exit
+
+
