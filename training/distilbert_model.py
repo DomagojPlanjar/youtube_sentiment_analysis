@@ -81,7 +81,7 @@ def main():
 
     # Define the learning rate scheduler
     num_training_steps = len(train_loader) * EPOCHS
-    num_warmup_steps = int(0.1 * num_training_steps)  # 10% warmup
+    num_warmup_steps = int(0.1 * num_training_steps)
 
     scheduler = get_scheduler(
         "linear",

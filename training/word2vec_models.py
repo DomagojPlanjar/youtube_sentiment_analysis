@@ -50,6 +50,7 @@ def main():
 
     df = pd.read_csv(file_path, header=None, encoding='ISO-8859-1')
     df.columns = ['label'] + [f'col_{i}' for i in range(1, df.shape[1] - 1)] + ['text']  # Set column names
+
     # Keep only the label and text columns
     df = df[['label', 'text']]
 
@@ -61,7 +62,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Initialize the MeanEmbeddingTransformer with word2vec
-    # (Takes mean value of word embedding of one text)
+    # (Takes mean value of word embeddings of one text)
     embedding_transformer = MeanEmbeddingTransformer(word2vec)
 
     # Random Forest model pipeline
@@ -81,11 +82,9 @@ def main():
         ("svm", SVC(kernel='linear', random_state=42))
     ])
 
-
     # Train the Random Forest model
     logging.info("Training Random Forest model...")
     rf_pipeline.fit(X_train, y_train)
-
 
     # Train the Logistic Regression model
     logging.info("Training Logistic Regression model...")
@@ -94,7 +93,6 @@ def main():
     # Train the SVM model
     logging.info("Training SVM model...")
     svm_pipeline.fit(X_train, y_train)
-
 
     # Predict and evaluate Random Forest
     logging.info("Evaluating Random Forest model...")
