@@ -116,7 +116,10 @@ This project involves sentiment analysis of YouTube comments using various machi
     
     You can modify app/predict.py file to use preferred model.
     Since DistilBert gives best results, that is the default one 
-    selected for analysis. 
+    selected for analysis. Fine tuned DistilBert model is available to 
+    download from [here](https://drive.google.com/file/d/1ayfGi46vXjKR_cmdDOsk4qmmZeG8ORwA/view?usp=sharing).
+    You can then place it to models directory as instructed to use it. 
+
 
 4.  Any additional needed help can be found as comments in code.
 
