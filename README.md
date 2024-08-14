@@ -2,7 +2,10 @@
 
 ## Overview
 
-This project involves sentiment analysis of YouTube comments using various machine learning models, including Word2Vec-based models and fine-tuned DistilBERT. The goal is to classify comments as either Positive or Negative. The project includes:
+This project involves sentiment analysis of YouTube comments using various
+machine learning models, including Word2Vec-based models and
+fine-tuned DistilBERT. The goal is to classify comments as either
+Positive or Negative and display video rating in percentage. The project includes:
 
 - Training models using Word2Vec embeddings with Random Forest, Logistic Regression, and SVM.
 - Fine-tuning DistilBERT for better performance on the sentiment classification task.
